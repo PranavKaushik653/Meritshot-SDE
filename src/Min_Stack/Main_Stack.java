@@ -4,7 +4,7 @@ import java.util.ArrayDeque;
 import java.util.Deque;
 import java.util.Scanner;
 
-public class Main {
+public class Main_Stack {
 
     static class MinStack{
         private Deque<Integer> stack;
