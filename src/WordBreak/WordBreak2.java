@@ -2,7 +2,7 @@ package WordBreak;
 
 import java.util.*;
 
-public class WordBreak1 {
+public class WordBreak2 {
     static Map<Integer, List<String>> memo = new HashMap<>();
     static Set<String> dict;
     static String s;
