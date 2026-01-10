@@ -18,15 +18,10 @@ public class SlidingWindowMax {
             if (!dq.isEmpty() && dq.peekFirst() <= i - k) {
                 dq.pollFirst();
             }
-
-            // maintain decreasing order
             while (!dq.isEmpty() && nums[dq.peekLast()] < nums[i]) {
                 dq.pollLast();
             }
-
             dq.offerLast(i);
-
-            // window formed
             if (i >= k - 1) {
                 res[idx++] = nums[dq.peekFirst()];
             }
